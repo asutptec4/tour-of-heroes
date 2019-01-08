@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: EditHeroComponent },
   { path: 'heroes', component: HeroesComponent },
-  { path: 'simpleform', component: SimpleFormComponent }
+  { path: 'simpleform', component: SimpleFormComponent },
+  // { path: 'addhero', loadChildren: '.app-forms/app-forms.module#AppFormsModule' }
 ];
 
 @NgModule({
