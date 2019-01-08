@@ -17,7 +17,7 @@ export class AddHeroComponent implements OnInit {
 
   add(name: string, attack: number, health: number): void {
     name = name.trim();
-    if (!name) { return; }
+    if (!name || !attack || !health) { return; }
     this.heroService.addHero({ name, attack, health } as Hero)
       .subscribe();
   }
