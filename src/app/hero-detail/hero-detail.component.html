@@ -1,11 +1,6 @@
 <div *ngIf="hero">
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name">
-    </label>
-  </div>
+  <div *ngIf="visible; else elseBlock"><span>Attack: {{hero.attack}}, Health: {{hero.health}}</span></div>
+  <ng-template #elseBlock>
+    <button (click)="visible = true">show details</button>
+  </ng-template>
 </div>
-<button (click)="save()">save</button>
-<button (click)="goBack()">go back</button>

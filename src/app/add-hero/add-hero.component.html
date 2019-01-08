@@ -1,0 +1,17 @@
+<div>
+  <label>name:
+    <input #heroName placeholder="name">
+  </label>
+</div>
+<div>
+  <label>attack:
+    <input #heroAttack placeholder="attack">
+  </label>
+</div>
+<div>
+  <label>health:
+    <input #heroHealth placeholder="health">
+  </label>
+</div>
+<button (click)="add(heroName.value, heroAttack.value, heroHealth.value); heroName.value=heroAttack.value=heroHealth.value=''; goBack()">add</button>
+<button (click)="goBack()">go back</button>
