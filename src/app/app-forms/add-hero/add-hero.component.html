@@ -1,3 +1,41 @@
-<p>
-  add-hero works!
-</p>
+<!-- <div class="">
+  <h1>New Hero Form</h1>
+  <form>
+    <div class="">
+      <label for="name">Name: </label>
+      <input type="text" class="" id="name" required>
+    </div>
+
+    <div class="">
+      <label for="attack">Attack: </label>
+      <input type="text" class="" id="attack">
+    </div>
+
+    <div class="">
+      <label for="health">Health: </label>
+      <input type="text" class="" id="health">
+    </div>
+
+    <button type="submit" class="">add</button>
+    <button>go back</button>
+
+  </form>
+</div> -->
+<div>
+    <label>name:
+      <input #heroName placeholder="name">
+    </label>
+  </div>
+  <div>
+    <label>attack:
+      <input #heroAttack placeholder="attack">
+    </label>
+  </div>
+  <div>
+    <label>health:
+      <input #heroHealth placeholder="health">
+    </label>
+  </div>
+  <button (click)="add(heroName.value, heroAttack.value, heroHealth.value); heroName.value=heroAttack.value=heroHealth.value=''; goBack()">add</button>
+  <button (click)="goBack()">go back</button>
+  
