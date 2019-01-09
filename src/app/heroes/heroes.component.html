@@ -1,23 +1,7 @@
 <h2>My Heroes</h2>
 
-<table class="heroes table">
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Details</th>
-    <th>Edit</th>
-    <th>Delete</th>
-  </tr>
-  <tr *ngFor="let hero of heroes">
-    <td><span class="badge">{{hero.id}}</span></td>
-    <td><span>{{hero.name}}</span></td>
-    <td>
-      <app-hero-detail [hero]="hero"></app-hero-detail>
-    </td>
-    <td><button routerLink="/detail/{{hero.id}}">Edit</button></td>
-    <td><button (click)="delete(hero)">Delete</button></td>
-  </tr>
-</table>
+<app-hero-table [heroes]="heroes" #heroTable></app-hero-table>
+<app-hero-detail [hero]="heroTable.selectedHero"></app-hero-detail>
 
 <div>
   <button routerLink="/add">add hero</button>

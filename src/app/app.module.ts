@@ -14,6 +14,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddHeroDialogComponent } from './add-hero-dialog/add-hero-dialog.component';
+import { HeroTableComponent } from './hero-table/hero-table.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AddHeroDialogComponent } from './add-hero-dialog/add-hero-dialog.compon
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    AddHeroDialogComponent
+    AddHeroDialogComponent,
+    HeroTableComponent
   ],
   imports: [
     AppRoutingModule,

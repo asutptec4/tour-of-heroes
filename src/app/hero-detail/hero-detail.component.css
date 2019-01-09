@@ -11,3 +11,9 @@ button {
 button:hover {
     background-color: #cfd8dc;
 }
+.detail {
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+    border-style: dotted; 
+}

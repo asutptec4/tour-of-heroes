@@ -1,0 +1,52 @@
+/* HeroTableComponent's private CSS styles */
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+}
+button:hover {
+    background-color: #cfd8dc;
+}
+.heroes td, th {
+    border: 1px solid #eee;
+    padding: 8px;
+}
+.heroes td button {
+    display: block;
+    margin: auto;
+}
+.heroes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #607D8B;
+    color: white;
+}
+a {
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #eee;
+    border-radius: 4px;
+}
+a:visited, a:link {
+    color: #607d8b;
+}
+a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+    cursor: pointer;
+}
+a.active {
+    color: #039be5;
+}

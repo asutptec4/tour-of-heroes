@@ -1,0 +1,12 @@
+<table class="heroes table">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Delete</th>
+  </tr>
+  <tr (click)="selectedHero = hero" *ngFor="let hero of heroes">
+    <td><a routerLink="/detail/{{hero.id}}">{{hero.id}}</a></td>
+    <td><span>{{hero.name}}</span></td>
+    <td><button (click)="delete(hero)">Delete</button></td>
+  </tr>
+</table>

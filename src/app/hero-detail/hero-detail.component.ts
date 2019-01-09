@@ -10,8 +10,6 @@ export class HeroDetailComponent implements OnInit {
 
   @Input() hero: Hero;
 
-  visible = false;
-
   constructor() { }
 
   ngOnInit() {

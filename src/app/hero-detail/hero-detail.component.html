@@ -1,6 +1,8 @@
-<div *ngIf="hero">
-  <div *ngIf="visible; else elseBlock"><span>Attack: {{hero.attack}}, Health: {{hero.health}}</span></div>
-  <ng-template #elseBlock>
-    <button (click)="visible = true">show details</button>
-  </ng-template>
+<div *ngIf="hero" class="detail">
+  <h3>Hero detail</h3>
+  <p>Hero ID: {{hero.id}}</p>
+  <p>Name: {{hero.name}}</p>
+  <p>Attack: {{hero.attack}}</p>
+  <p>Health: {{hero.health}}</p>
+  <button (click)="hero = null">close detail</button>
 </div>

@@ -1,11 +1,4 @@
 /* HeroesComponent's private CSS styles */
-.heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    border-collapse: collapse;
-    width: 100%;
-}
 button {
     background-color: #eee;
     border: none;
@@ -17,19 +10,4 @@ button {
 }
 button:hover {
     background-color: #cfd8dc;
-}
-.heroes td, th {
-    border: 1px solid #eee;
-    padding: 8px;
-}
-.heroes td button {
-    display: block;
-    margin: auto;
-}
-.heroes th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #607D8B;
-    color: white;
 }
