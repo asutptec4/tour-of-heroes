@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { AddHeroDialogComponent } from './add-hero-dialog/add-hero-dialog.component';
+
 
 @Component({
   selector: 'app-root',
@@ -8,7 +11,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Tour of Heroes';
 
-  printHello(): void {
-    console.log('Welcome to ' + this.title);
+  constructor(public dialog: MatDialog) { }
+
+  openDialog(): void {
+    this.dialog.open(AddHeroDialogComponent, { height: '400px', width: '300px' });
   }
 }
